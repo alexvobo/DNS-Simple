@@ -1,5 +1,4 @@
 # Recursive-DNS-client-and-DNS-servers
-Project 1: Recursive DNS client and DNS servers
 ===============================================
 
 Overview
