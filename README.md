@@ -20,11 +20,11 @@ The client always connects first to RS, sending the queried hostname as a
 string. The RS program does a look up in its DNS_table, and if there is a match,
 sends the entry as a string
 
-  Hostname IPaddress A
+- Hostname IPaddress A
 
 If there is no match, RS sends the string
 
-  TSHostname - NS
+- TSHostname - NS
 
 where TShostname is the name of the machine on which the TS program is running.
 
@@ -38,11 +38,11 @@ The client then sends the queried hostname as a string to TS. The TS program
 looks up the hostname in its DNS_table, and if there is a match, sends the entry
 as a string
 
-  Hostname IP address A
+- Hostname IP address A
 
 to the client. Otherwise, it sends an error string
 
-  Hostname - Error:HOST NOT FOUND
+- Hostname - Error:HOST NOT FOUND
 
 In the TS outputs above, Hostname is the queried hostname. The client outputs
 the string received from TS as is.
@@ -55,9 +55,9 @@ Usage
 --------
 The programs works with the following command lines:
 
-  python ts.py tsListenPort
-  python rs.py rsListenPort
-  python client.py rsHostname rsListenPort tsListenPort
+- python ts.py tsListenPort
+- python rs.py rsListenPort
+- python client.py rsHostname rsListenPort tsListenPort
 
 Here tsListenPort (rsListenPort) is the port on which TS (RS) listens for
 requests and rsHostname is the hostname of the machine running the RS program. 
